@@ -1,0 +1,8 @@
+{
+  "amount_overrides": {
+    "event_6859": 3650.0
+  },
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Hospital bill (event_6859) confirmed payable amount is INR 3650.00 per the itemized bill image (Amount Paid: 0.00, Balance: 3650.00); a separate RentTrack message mentions a 12% rent increase on lease renewal but gives no exact new figure or event_id, so no override was made for it."
+}

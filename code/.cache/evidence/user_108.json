@@ -1,0 +1,9 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Confirmed base salary raised to ZAR 33440 effective going forward per employer update on 2026-06-28; open-deal commissions remain pending, not confirmed income.",
+  "recurring_overrides": {
+    "salary": 33440.0
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Employer confirms temporary reduced monthly salary of EUR 1750.32 continues for the next payroll cycle (message dated 2024-03-05).",
+  "recurring_overrides": {
+    "salary": 1750.32
+  }
+}

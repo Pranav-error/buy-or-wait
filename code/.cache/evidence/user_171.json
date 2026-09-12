@@ -1,0 +1,6 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Bank message describes a matching debit/credit as an internal transfer between the user's own two accounts (no net cash flow); no specific event_id was provided in this batch to exclude."
+}

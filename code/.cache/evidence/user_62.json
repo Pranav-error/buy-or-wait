@@ -1,0 +1,6 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Client approved an invoice for USD 2112 with settlement expected 2025-08-15 (InvoiceFlow); an approved-but-unsettled receivable, so not counted as confirmed cash."
+}

@@ -1,0 +1,6 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Client approved an invoice for ZAR 35200 with settlement expected 2026-01-15 (ClientDesk); an approved-but-unsettled receivable, so not counted as confirmed cash."
+}

@@ -1,0 +1,6 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Refund (event_20379) initiated but not yet received; do not count until it settles into the account."
+}

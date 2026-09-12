@@ -1,0 +1,6 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Merchant confirms a refund for order tied to event_25342 has been initiated but not yet credited to the account; do not count as settled cash until it lands (up to ten business days)."
+}

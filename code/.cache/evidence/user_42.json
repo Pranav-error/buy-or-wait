@@ -1,0 +1,9 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "One household employment record ended; employer confirms the remaining confirmed monthly household salary is INR 148000 going forward (message dated 2025-12-31). Ended income should not be projected into future months.",
+  "recurring_overrides": {
+    "salary": 148000.0
+  }
+}

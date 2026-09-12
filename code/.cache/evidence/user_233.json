@@ -1,0 +1,14 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [
+    {
+      "date": "2025-11-15",
+      "amount": 16910000,
+      "currency": "IDR",
+      "direction": "credit",
+      "description": "Confirmed regular salary payment approved by payroll (Northstar Labs), replacing the earlier prorated first salary."
+    }
+  ],
+  "note": ""
+}

@@ -1,0 +1,6 @@
+{
+  "amount_overrides": {"event_1786": 704.05},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Outstanding telecom bill (event_1786) confirmed at INR 704.05 due by 06-Feb-2026 per Airtel bill image_05; a separate CartLane refund (event_1785) has not yet reached the account."
+}

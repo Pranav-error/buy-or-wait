@@ -1,0 +1,6 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "A matching debit and credit are an internal transfer between the user's own two accounts (a wash, not new cash), but no event ids were shown to identify which entries."
+}

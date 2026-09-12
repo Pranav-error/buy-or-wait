@@ -1,0 +1,6 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Refund related to event_17662 has been initiated by the merchant but had not reached the account as of 2025-04-23; do not count until settled."
+}

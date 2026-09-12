@@ -1,0 +1,6 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Client submitted an invoice approved for settlement 2025-08-15 (InvoiceFlow); not yet settled at message time, so not counted as confirmed cash."
+}

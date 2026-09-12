@@ -1,0 +1,8 @@
+{
+  "amount_overrides": {
+    "event_3231": 8528
+  },
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Restaurant tax invoice (event_3231) grand total is INR 8528. Separate refund for event_3230 was only initiated as of 2025-10-20 and had not reached the account; do not count until settled."
+}

@@ -1,0 +1,9 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "One household income source ended; remaining confirmed monthly salary is IDR 25840000 (permanent change) effective after 2024-11-15.",
+  "recurring_overrides": {
+    "salary": 25840000.0
+  }
+}

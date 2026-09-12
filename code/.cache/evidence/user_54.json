@@ -1,0 +1,9 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Confirmed salary raised to ZAR 42460 effective 2026-07-15 (from ZAR 33118.8).",
+  "recurring_overrides": {
+    "salary": 42460.0
+  }
+}

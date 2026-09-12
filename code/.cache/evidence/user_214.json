@@ -1,0 +1,6 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Foreign-currency refund was still processing as of 2024-11-25; final home-currency credit amount not yet known, so no amount should be assumed."
+}

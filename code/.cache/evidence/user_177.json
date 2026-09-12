@@ -1,0 +1,9 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Salary was reduced to USD 952.38 for the Dec 2025 cycle only (approved unpaid leave, per event_16230); employer message confirms the next payroll (Jan 2026) reverts to the regular USD 1731.60.",
+  "recurring_overrides": {
+    "salary": 1731.6
+  }
+}

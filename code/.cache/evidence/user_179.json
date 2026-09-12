@@ -1,0 +1,6 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Message claims a cash prize requiring an upfront processing fee; this is a suspected advance-fee scam pattern and is not treated as a confirmed financial fact."
+}

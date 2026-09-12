@@ -1,0 +1,6 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Bank confirms a matching debit and credit were an internal transfer between the user's own accounts (same holder); no specific event_ids were provided to exclude."
+}

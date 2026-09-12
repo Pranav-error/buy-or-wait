@@ -1,0 +1,6 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Employer states the next payroll (2025-11-15) is approved and processing at IDR 26790000, following the prorated first salary (event_14769, IDR 14734500 on 2025-10-15). Amount not yet settled as of message date; treat as expected future recurring salary once it settles."
+}

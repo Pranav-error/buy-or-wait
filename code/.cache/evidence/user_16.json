@@ -1,0 +1,8 @@
+{
+  "amount_overrides": {
+    "event_1442": 100000
+  },
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": ""
+}

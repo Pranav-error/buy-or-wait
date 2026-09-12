@@ -1,0 +1,8 @@
+{
+  "amount_overrides": {
+    "event_7307": 33.5
+  },
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Taxi fare (event_7307) confirmed charge is USD 33.50 per the CityCab receipt (the $40 shown was cash tendered, with $6.50 change)."
+}

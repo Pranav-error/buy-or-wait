@@ -1,0 +1,9 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Confirmed base salary raised to IDR 44270000 (permanent); commission on running transactions remains pending approval and should not be counted until earned.",
+  "recurring_overrides": {
+    "salary": 44270000.0
+  }
+}

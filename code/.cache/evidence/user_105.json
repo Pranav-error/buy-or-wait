@@ -1,0 +1,8 @@
+{
+  "amount_overrides": {
+    "event_9806": 9968
+  },
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Airline ticket purchase confirmed at INR 9,968 (grand total incl. taxes) per invoice image; portfolio value increase mentioned elsewhere is unrealized and not counted as cash."
+}

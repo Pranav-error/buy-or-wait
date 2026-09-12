@@ -1,0 +1,9 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "One household income stream (the 'Second household income' series) ended as of 2025-08-05; going forward the confirmed total household salary is INR 126000/month, replacing the prior separate incomes.",
+  "recurring_overrides": {
+    "salary": 126000.0
+  }
+}

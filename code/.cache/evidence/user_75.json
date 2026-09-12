@@ -1,0 +1,9 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Employment with Northstar Labs has ended; no further regular salary payments are scheduled after the final settlement (amount not yet specified).",
+  "recurring_overrides": {
+    "salary": 0.0
+  }
+}

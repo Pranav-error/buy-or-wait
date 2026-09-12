@@ -1,0 +1,9 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Employment ended per employer notice; no further regular salary payments scheduled beyond final settlement.",
+  "recurring_overrides": {
+    "salary": 0.0
+  }
+}

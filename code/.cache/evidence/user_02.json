@@ -1,0 +1,9 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Confirmed salary raised to IDR 42750000 effective 2025-08-15 (permanent change).",
+  "recurring_overrides": {
+    "salary": 42750000.0
+  }
+}

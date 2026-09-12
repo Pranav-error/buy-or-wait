@@ -1,0 +1,9 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Employer confirms a raised base salary of USD 1548 (from USD 928.8) as of 2025-02-02; commission amounts remain pending approval and are excluded until earned.",
+  "recurring_overrides": {
+    "salary": 1548.0
+  }
+}

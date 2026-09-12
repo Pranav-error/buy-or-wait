@@ -1,0 +1,9 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Following the reduced December payment (event_15360, unpaid leave), the next payroll cycle returns to the normal INR 137150 salary.",
+  "recurring_overrides": {
+    "salary": 137150.0
+  }
+}

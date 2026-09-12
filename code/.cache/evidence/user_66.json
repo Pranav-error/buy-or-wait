@@ -1,0 +1,6 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Client approved an invoice for INR 116000 with settlement expected 2026-04-15, but it has not settled yet; other submitted invoices remain unapproved and should not be counted."
+}

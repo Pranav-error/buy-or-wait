@@ -1,0 +1,6 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Landlord notice: renewed lease increases monthly rent by 12% effective next rent payment (recurring expense change, no event_id given)."
+}

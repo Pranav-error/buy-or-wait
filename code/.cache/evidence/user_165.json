@@ -1,0 +1,9 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Employment ended per employer notice dated 2026-04-03; no further regular salary payments are scheduled beyond the final settlement.",
+  "recurring_overrides": {
+    "salary": 0.0
+  }
+}

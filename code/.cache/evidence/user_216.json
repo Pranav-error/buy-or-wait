@@ -1,0 +1,9 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Confirmed salary increase to USD 2424 effective 2026-07-15 (permanent change).",
+  "recurring_overrides": {
+    "salary": 2424.0
+  }
+}

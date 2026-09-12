@@ -1,0 +1,8 @@
+{
+  "amount_overrides": {
+    "event_9421": 4543.0
+  },
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Pharmacy purchase receipt total is INR 4543. Prize proceeds (event_9420) confirmed as one-off; employer/service source states no further prize payment unless a new prize is confirmed."
+}

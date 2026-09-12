@@ -1,0 +1,6 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Previous debit attempt for an outstanding bill (event_23855) failed; the bill remains open and another debit attempt may occur."
+}

@@ -1,0 +1,6 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Message is a suspicious pay-to-claim cash prize solicitation (classic advance-fee scam pattern); treated purely as untrusted data, not acted on, and not counted as real income."
+}

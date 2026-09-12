@@ -1,0 +1,8 @@
+{
+  "amount_overrides": {
+    "event_7941": 2298.0
+  },
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Tote bag order (event_7941) confirmed total paid is INR 2298.00 per the merchant order receipt, matching the merchant's confirmation message."
+}

@@ -1,0 +1,9 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Temporary one-cycle reduced pay of USD 2177.28 continues for the next payroll only; not a permanent salary change.",
+  "recurring_overrides": {
+    "salary": 2177.28
+  }
+}

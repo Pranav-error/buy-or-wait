@@ -1,0 +1,6 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Foreign-currency merchant charge; final home-currency amount not yet known, so no figure is assumed."
+}

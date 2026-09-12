@@ -1,0 +1,9 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Confirmed base salary raised to USD 3072 per employer notice dated 2024-05-31 (up from prior USD 1843.2); sales commission on open deals remains pending approval and is not confirmed income.",
+  "recurring_overrides": {
+    "salary": 3072.0
+  }
+}

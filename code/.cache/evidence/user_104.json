@@ -1,0 +1,9 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Confirmed base salary raised to ZAR 35860 (permanent); pending commission on open deals not yet earned/payable and should not be counted.",
+  "recurring_overrides": {
+    "salary": 35860.0
+  }
+}

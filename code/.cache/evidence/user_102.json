@@ -1,0 +1,6 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Client-approved invoice of EUR 1419 has settlement expected 2026-04-15 but was not yet settled as of the message; do not count until settled. Other submitted invoices remain unapproved."
+}

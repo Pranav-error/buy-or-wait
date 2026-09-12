@@ -1,0 +1,9 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Employment with HarborWorks has ended; no further recurring salary is confirmed after the final settlement. Final settlement amount/date not yet provided.",
+  "recurring_overrides": {
+    "salary": 0.0
+  }
+}

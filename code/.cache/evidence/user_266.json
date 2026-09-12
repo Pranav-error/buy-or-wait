@@ -1,0 +1,6 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Portfolio market value (event_24534) has risen but no units were sold; this is an unrealized gain, not cash, and must not be counted as available funds."
+}

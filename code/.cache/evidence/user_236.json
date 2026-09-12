@@ -1,0 +1,6 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "PocketVest investment value shown has declined, but the investment has not been sold; this is an unrealized valuation change with no cash impact (related event_21785 not detailed in this batch)."
+}

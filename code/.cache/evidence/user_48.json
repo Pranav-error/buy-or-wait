@@ -1,0 +1,8 @@
+{
+  "amount_overrides": {
+    "event_4535": 15339.0
+  },
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Property maintenance receipt (event_4535) total amount received is INR 15339."
+}

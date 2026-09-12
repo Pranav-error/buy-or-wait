@@ -1,0 +1,8 @@
+{
+  "amount_overrides": {
+    "event_5170": 723.0
+  },
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Water bill (event_5170) amount confirmed as INR 723.00 from the payment receipt image."
+}

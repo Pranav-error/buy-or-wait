@@ -1,0 +1,8 @@
+{
+  "amount_overrides": {
+    "event_3051": 1995.0
+  },
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Bank confirmed a matching debit and credit on the account were an internal transfer between the user's own two accounts, not new external cash flow."
+}

@@ -1,0 +1,9 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "One household's employment income ended; employer confirms remaining recurring confirmed monthly income at EUR 2827 as of 2025-08-05 (previously the household received both a primary ~EUR 1752.74 salary and a second income stream).",
+  "recurring_overrides": {
+    "salary": 2827.0
+  }
+}

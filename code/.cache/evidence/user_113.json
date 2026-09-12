@@ -1,0 +1,6 @@
+{
+  "amount_overrides": {"event_10521": 393.22},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "EV charging wallet payment (event_10521) confirmed at INR 393.22 per receipt image_16."
+}

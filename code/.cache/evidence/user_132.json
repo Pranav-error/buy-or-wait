@@ -1,0 +1,9 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Confirmed salary returns to USD 1193.40 for next payroll (after Dec 2025's reduced USD 656.37) due to approved unpaid leave ending.",
+  "recurring_overrides": {
+    "salary": 1193.4
+  }
+}

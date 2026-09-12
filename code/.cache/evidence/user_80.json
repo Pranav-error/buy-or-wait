@@ -1,0 +1,9 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Confirmed base salary raised to INR 158000 effective going forward per employer update on 2025-01-26; open-deal commissions remain pending, not confirmed income.",
+  "recurring_overrides": {
+    "salary": 158000.0
+  }
+}

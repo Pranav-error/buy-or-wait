@@ -1,0 +1,6 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "A prior debit attempt for a bill (event_8575, not detailed in this batch) failed; the bill remains outstanding and another debit attempt is pending. Do not assume it has settled."
+}

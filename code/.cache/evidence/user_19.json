@@ -1,0 +1,8 @@
+{
+  "amount_overrides": {
+    "event_1700": 2854
+  },
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "AMBIGUOUS: delivery app screenshot shows itemized 'Item Bill' totaling INR 2,854, but the full order total including delivery fee/charges was cut off in the image; actual debited amount may be higher. Recommend human review of the underlying event/original receipt."
+}

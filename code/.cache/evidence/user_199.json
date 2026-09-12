@@ -1,0 +1,6 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "ShiftPay's next weekly payout was still pending/unsettled as of 2024-08-24; do not count until settlement is confirmed."
+}

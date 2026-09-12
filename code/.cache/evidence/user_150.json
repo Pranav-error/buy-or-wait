@@ -1,0 +1,9 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Confirmed salary returns to EUR 893.75 for next payroll (Jan 2026) after Dec 2025's leave-related reduction to EUR 491.56.",
+  "recurring_overrides": {
+    "salary": 893.75
+  }
+}

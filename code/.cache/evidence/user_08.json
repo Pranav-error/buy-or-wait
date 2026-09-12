@@ -1,0 +1,9 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Salary temporarily reduced to EUR 1422.85 for the next payroll cycle only, due to approved unpaid leave.",
+  "recurring_overrides": {
+    "salary": 1422.85
+  }
+}

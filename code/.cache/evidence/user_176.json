@@ -1,0 +1,9 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "Employer states confirmed base salary is EUR 847, differing from the EUR 508.2 recorded in recent base-salary events; commission on open deals remains pending and should not be counted until earned.",
+  "recurring_overrides": {
+    "salary": 847.0
+  }
+}

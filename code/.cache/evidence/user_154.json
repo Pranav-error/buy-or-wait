@@ -1,0 +1,9 @@
+{
+  "amount_overrides": {},
+  "exclude_event_ids": [],
+  "extra_items": [],
+  "note": "One household income source ended; remaining confirmed monthly salary is EUR 1628 (permanent change) effective after 2024-11-15.",
+  "recurring_overrides": {
+    "salary": 1628.0
+  }
+}
