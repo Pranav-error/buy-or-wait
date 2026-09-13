@@ -163,28 +163,37 @@ flowchart TD
     C1 -->|no| SKIP["not recurring<br/>— project nothing"]
     C1 -->|yes| C2{"gaps regular?<br/>spread/median ≤ 0.35"}
     C2 -->|no| SKIP
-    C2 -->|yes| AMT["amount estimate"]
-    AMT --> SPIKE{"recent value ><br/>2.5× category median?"}
-    SPIKE -->|yes| DROP["treat as one-off spike,<br/>exclude from estimate"]
-    SPIKE -->|no| KEEP["keep"]
-    DROP --> EST
-    KEEP --> EST["debit → max(remaining)<br/>credit → min(remaining)"]
-    EST --> PROJ["project forward at<br/>median cadence"]
+    C2 -->|yes| SPIKE{"debit AND recent value ><br/>2.5× category median?"}
+    SPIKE -->|yes| DROP["exclude as<br/>one-off spike"]
+    SPIKE -->|no| KEEP["keep all recent"]
+    DROP --> FIX{"flexibility<br/>== fixed?"}
+    KEEP --> FIX
+    FIX -->|yes| EST1["debit → max(remaining)<br/>credit → min(remaining)"]
+    FIX -->|no, reducible/stoppable| EST2["project at most<br/>recent observation"]
+    EST1 --> PROJ["project forward at<br/>calendar-correct cadence"]
+    EST2 --> PROJ
 
     style SPIKE fill:#5a4a2d,stroke:#a89a5b,color:#fff
-    style EST fill:#2d4a5a,stroke:#5b8fa8,color:#fff
+    style EST1 fill:#2d4a5a,stroke:#5b8fa8,color:#fff
+    style EST2 fill:#2d4a5a,stroke:#5b8fa8,color:#fff
 ```
 
-Four rules, each earning its place:
+Five rules, each earning its place:
 
 **Recurrence requires evidence.** Three occurrences minimum, with regular gaps.
 The spec says *"detect recurrence only when history supports it"* — a single
 rent payment is not proof of a monthly obligation.
 
-**Estimate conservatively, directionally.** For expenses take the **max** of
-recent occurrences, for income the **min**. Averaging was the original
-implementation and it was wrong: the spec asks for conservative forecasting of
-*"essential variable spending"*, and the mean is not conservative.
+**Estimate conservatively, directionally — but only for what the user can't
+adjust.** A `flexibility="fixed"` category (rent, non-negotiable spending)
+takes the **max** of recent occurrences for expenses, **min** for income —
+averaging was the original implementation and it was wrong, since the spec
+asks for conservative forecasting and a mean isn't conservative in either
+direction. A `reducible`/`stoppable` category, which the user is *already*
+actively managing, instead projects at its most recent observed value; taking
+the max there assumes every future cycle repeats an inflated recent peak.
+Measured against 4 candidate estimators — only this split improves
+`amount_safe_to_pay` accuracy with zero regression elsewhere.
 
 **But "conservative" means the worst *typical* cycle, not the worst cycle ever.**
 This distinction is subtle and it cost real accuracy before it was fixed.
@@ -274,8 +283,8 @@ overfitting to 25 rows:
 
 | Layer | What it covers | Result |
 |---|---|---|
-| `evaluation/main.py` | the 25 official solved samples | **20/25** status, **22/25** method |
-| `tests/test_engine.py` | 8 regression tests pinning every fixed defect + bounds/coverage across all 250 | 8/8 |
+| `evaluation/main.py` | the 25 official solved samples, all 6 scored criteria | **20/25** status, **22/25** method |
+| `tests/test_engine.py` | 13 regression tests pinning every one of 12 fixed defects + bounds/coverage across all 250 | 13/13 |
 | `tests/test_adversarial_evidence.py` | 25 tests on fraud, receivables, schema containment | 25/25 |
 | `tests/run_synthetic_scenarios.py` | 15 hand-reasoned requests built on **real** users' actual history | found 2 real bugs |
 | `tests/audit_real_requests.py` | 20 stratified real predictions hand-verified against their ledgers | 20/20 correct |

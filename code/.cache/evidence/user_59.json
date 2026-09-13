@@ -2,5 +2,8 @@
   "amount_overrides": {},
   "exclude_event_ids": [],
   "extra_items": [],
-  "note": ""
+  "note": "WorkDash payout still pending and not withdrawable until closed as of the message date; gig earnings can change until settlement, so future weekly income is projected conservatively rather than at its most recent value.",
+  "recurring_overrides": {
+    "salary": 41223.09
+  }
 }
