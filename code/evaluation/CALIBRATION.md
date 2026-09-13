@@ -233,6 +233,44 @@ turned out to be the engine being right:
 
 ---
 
+## A real fix: fixed vs. adjustable categories use different estimators
+
+Tracing the two closest near-misses by hand (`request_22`, `request_23`)
+against their raw per-category history exposed a distinction the estimator was
+missing: `flexibility` isn't just an eligibility flag for spending-change
+plans — it's a signal about *whether the amount is expected to be constant*.
+A `fixed` category (rent, a debt repayment, groceries when the user has no
+control over it) genuinely gets projected at its recent maximum; that's what
+"conservative" means for essential spending the user cannot adjust. But a
+`reducible` or `stoppable` category is, by definition, something the user is
+already actively managing — projecting it at a spiking recent peak assumes the
+worst month repeats forever, when the more grounded assumption is that it
+continues at its *current* level.
+
+Changed the estimator: `fixed` categories keep max-of-recent (debits) /
+min-of-recent (credits); `reducible` and `stoppable` categories now project at
+their single most recent observation instead. Measured, not assumed:
+
+| Estimator | Status | Method | Amount ≤1% | Amount ≤5% |
+|---|---:|---:|---:|---:|
+| max/min uniformly (old) | 20 | 22 | 5 | 11 |
+| last-observed uniformly | 19 | 21 | 6 | 10 |
+| **fixed→max/min, variable→last (shipped)** | **20** | **22** | **6** | 11 |
+| variable→max/min, fixed→last | 19 | 19 | 6 | 9 |
+
+Only the shipped combination improves a sub-metric (≤1% band, 5→6) with **zero
+regression** on any of the other five. The clearest single win: `request_03`'s
+`amount_safe_to_pay` error dropped from 150% to 0.06% (₹2,183,755.81 →
+₹872,452.60 against a true value of ₹873,000.00) — a case that was previously
+the single worst outlier after the two unexplained 21× cases below, now
+essentially exact.
+
+This is shipped as the default (`ESTIMATOR_MODE = "hybrid2"` in `events.py`,
+overridable via `BOW_ESTIMATOR` for re-sweeping). It's a real, principled,
+measured improvement — but it does not close the gap on the two dominant
+outliers below, which remain unexplained after this and every other hypothesis
+tried.
+
 ## Hypotheses tested and rejected
 
 `amount_safe_to_pay` (4/25 exact) and `earliest_date_for_full_payment` (13/25)

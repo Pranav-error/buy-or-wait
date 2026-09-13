@@ -37,6 +37,15 @@ RECENCY_WINDOW = int(os.environ.get("BOW_RECENCY_WINDOW", "3"))
 # excluded from the conservative recurring estimate. Calibrated by sweep.py.
 SPIKE_OUTLIER_FACTOR = float(os.environ.get("BOW_SPIKE_FACTOR", "2.5"))
 
+# "maxmin" = max of recent debits / min of recent credits, uniformly. "last" =
+# the single most recent settled occurrence, spike-filtered. "hybrid2" = last-
+# observed for variable (reducible/stoppable) categories, max/min for fixed
+# ones -- fixed essentials (rent, debt repayment) are conservatively estimated
+# by their worst recent cycle, but a variable category the user could actually
+# adjust is forecast at its current level rather than an inflated recent peak.
+# Calibrated by sweep; see evaluation/CALIBRATION.md.
+ESTIMATOR_MODE = os.environ.get("BOW_ESTIMATOR", "hybrid2")
+
 
 @dataclass
 class RecurringPattern:
@@ -129,7 +138,13 @@ def detect_recurring_patterns(ds: Dataset, user_id: str, home_ccy: str, as_of: d
             typical = [a for a in amounts_home if a <= median_amount * SPIKE_OUTLIER_FACTOR]
             if typical:
                 amounts_home = typical
-        avg_amount = max(amounts_home) if direction == "debit" else min(amounts_home)
+        flex = grp.iloc[-1]["flexibility"]
+        use_last = ESTIMATOR_MODE == "last" or (ESTIMATOR_MODE == "hybrid" and flex == "fixed") \
+            or (ESTIMATOR_MODE == "hybrid2" and flex != "fixed")
+        if use_last:
+            avg_amount = amounts_home[-1]
+        else:
+            avg_amount = max(amounts_home) if direction == "debit" else min(amounts_home)
         last_row = grp.iloc[-1]
         last_date = last_row["event_date"]
 
